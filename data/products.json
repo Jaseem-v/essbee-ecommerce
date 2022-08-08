@@ -1,0 +1,1538 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "createDate": "July 11 2022 10:01:00 AM",
+      "sku": "asdf101",
+      "name": " fashion one",
+      "slug": "fashion-one",
+      "price": 17,
+      "discount": 10,
+      "featured": false,
+      "new": true,
+      "rating": 4,
+      "ratingCount": 5,
+      "saleCount": 90,
+      "category": [
+        "mobile",
+        "tv"
+      ],
+      "tag": [
+        "mobile",
+        "tv"
+      ],
+      "variation": [
+        {
+          "color": "brown",
+          "colorCode": "#87554b",
+          "image": "/assets/product/1.jpg",
+          "size": [
+            {
+              "name": "x",
+              "stock": 3
+            },
+            {
+              "name": "m",
+              "stock": 2
+            },
+            {
+              "name": "xl",
+              "stock": 5
+            }
+          ]
+        },
+        {
+          "color": "black",
+          "colorCode": "#333333",
+          "image": "/assets/product/2.jpg",
+          "size": [
+            {
+              "name": "x",
+              "stock": 4
+            },
+            {
+              "name": "m",
+              "stock": 7
+            },
+            {
+              "name": "xl",
+              "stock": 9
+            },
+            {
+              "name": "xxl",
+              "stock": 1
+            }
+          ]
+        },
+        {
+          "color": "red",
+          "colorCode": "#da323f",
+          "image": "/assets/product/3.jpg",
+          "size": [
+            {
+              "name": "x",
+              "stock": 1
+            },
+            {
+              "name": "m",
+              "stock": 2
+            },
+            {
+              "name": "xl",
+              "stock": 4
+            },
+            {
+              "name": "xxl",
+              "stock": 0
+            }
+          ]
+        }
+      ],
+      "thumbImage": [
+        "/assets/product/1.jpg",
+        "/assets/product/2.jpg"
+      ],
+      "image": [
+        "/assets/product/1.jpg",
+        "/assets/product/2.jpg",
+        "/assets/product/3.jpg",
+        "/assets/product/4.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "2",
+      "createDate": "July 12 2022 10:02:00 AM",
+      "sku": "asdf102",
+      "name": " fashion two",
+      "slug": "fashion-two",
+      "price": 18,
+      "discount": 11,
+      "featured": true,
+      "new": true,
+      "rating": 3,
+      "ratingCount": 6,
+      "saleCount": 91,
+      "category": [
+        "fashion",
+        "men"
+      ],
+      "tag": [
+        "fashion",
+        "men"
+      ],
+      "stock": 10,
+      "thumbImage": [
+        "/assets/product/2.jpg",
+        "/assets/product/3.jpg"
+      ],
+      "image": [
+        "/assets/product/2.jpg",
+        "/assets/product/3.jpg",
+        "/assets/product/4.jpg",
+        "/assets/product/5.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "3",
+      "createDate": "July 13 2022 10:03:00 AM",
+      "sku": "asdf103",
+      "name": " fashion three",
+      "slug": "fashion-three",
+      "price": 19,
+      "discount": 12,
+      "featured": true,
+      "new": true,
+      "rating": 5,
+      "ratingCount": 7,
+      "saleCount": 92,
+      "category": [
+        "mobile",
+        "tv"
+      ],
+      "tag": [
+        "mobile",
+        "tv"
+      ],
+      "affiliateLink": "",
+      "thumbImage": [
+        "/assets/product/3.jpg",
+        "/assets/product/4.jpg"
+      ],
+      "image": [
+        "/assets/product/3.jpg",
+        "/assets/product/4.jpg",
+        "/assets/product/5.jpg",
+        "/assets/product/6.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "4",
+      "createDate": "July 14 2022 10:04:00 AM",
+      "sku": "asdf104",
+      "name": " fashion four",
+      "slug": "fashion-four",
+      "price": 20,
+      "discount": 0,
+      "featured": false,
+      "new": false,
+      "rating": 4,
+      "ratingCount": 8,
+      "saleCount": 93,
+      "category": [
+        "fashion",
+        "men"
+      ],
+      "tag": [
+        "fashion",
+        "men"
+      ],
+      "variation": [
+        {
+          "color": "brown",
+          "colorCode": "#87554b",
+          "image": "/assets/product/4.jpg",
+          "size": [
+            {
+              "name": "x",
+              "stock": 3
+            },
+            {
+              "name": "m",
+              "stock": 2
+            },
+            {
+              "name": "xl",
+              "stock": 5
+            }
+          ]
+        },
+        {
+          "color": "black",
+          "colorCode": "#333333",
+          "image": "/assets/product/5.jpg",
+          "size": [
+            {
+              "name": "x",
+              "stock": 4
+            },
+            {
+              "name": "m",
+              "stock": 7
+            },
+            {
+              "name": "xl",
+              "stock": 9
+            },
+            {
+              "name": "xxl",
+              "stock": 1
+            }
+          ]
+        },
+        {
+          "color": "red",
+          "colorCode": "#da323f",
+          "image": "/assets/product/6.jpg",
+          "size": [
+            {
+              "name": "x",
+              "stock": 1
+            },
+            {
+              "name": "m",
+              "stock": 2
+            },
+            {
+              "name": "xl",
+              "stock": 4
+            },
+            {
+              "name": "xxl",
+              "stock": 0
+            }
+          ]
+        }
+      ],
+      "thumbImage": [
+        "/assets/product/4.jpg",
+        "/assets/product/5.jpg"
+      ],
+      "image": [
+        "/assets/product/4.jpg",
+        "/assets/product/5.jpg",
+        "/assets/product/6.jpg",
+        "/assets/product/7.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "5",
+      "createDate": "July 15 2022 10:05:00 AM",
+      "sku": "asdf105",
+      "name": " fashion five",
+      "slug": "fashion-five",
+      "price": 21,
+      "discount": 0,
+      "featured": false,
+      "new": true,
+      "rating": 3,
+      "ratingCount": 9,
+      "saleCount": 94,
+      "category": [
+        "mobile",
+        "tv"
+      ],
+      "tag": [
+        "mobile",
+        "tv"
+      ],
+      "variation": [
+        {
+          "color": "brown",
+          "colorCode": "#87554b",
+          "image": "/assets/product/5.jpg",
+          "size": [
+            {
+              "name": "x",
+              "stock": 3
+            },
+            {
+              "name": "m",
+              "stock": 2
+            },
+            {
+              "name": "xl",
+              "stock": 5
+            }
+          ]
+        },
+        {
+          "color": "black",
+          "colorCode": "#333333",
+          "image": "/assets/product/6.jpg",
+          "size": [
+            {
+              "name": "x",
+              "stock": 4
+            },
+            {
+              "name": "m",
+              "stock": 7
+            },
+            {
+              "name": "xl",
+              "stock": 9
+            },
+            {
+              "name": "xxl",
+              "stock": 1
+            }
+          ]
+        },
+        {
+          "color": "red",
+          "colorCode": "#da323f",
+          "image": "/assets/product/7.jpg",
+          "size": [
+            {
+              "name": "x",
+              "stock": 1
+            },
+            {
+              "name": "m",
+              "stock": 2
+            },
+            {
+              "name": "xl",
+              "stock": 4
+            },
+            {
+              "name": "xxl",
+              "stock": 3
+            }
+          ]
+        }
+      ],
+      "thumbImage": [
+        "/assets/product/5.jpg",
+        "/assets/product/6.jpg"
+      ],
+      "image": [
+        "/assets/product/5.jpg",
+        "/assets/product/6.jpg",
+        "/assets/product/7.jpg",
+        "/assets/product/8.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "6",
+      "createDate": "July 16 2022 10:06:00 AM",
+      "sku": "asdf106",
+      "name": " fashion six",
+      "slug": "fashion-six",
+      "price": 22,
+      "discount": 0,
+      "featured": false,
+      "new": false,
+      "rating": 5,
+      "ratingCount": 10,
+      "saleCount": 95,
+      "category": [
+        "fashion",
+        "men"
+      ],
+      "tag": [
+        "fashion",
+        "men"
+      ],
+      "variation": [
+        {
+          "color": "brown",
+          "colorCode": "#87554b",
+          "image": "/assets/product/6.jpg",
+          "size": [
+            {
+              "name": "x",
+              "stock": 3
+            },
+            {
+              "name": "m",
+              "stock": 2
+            },
+            {
+              "name": "xl",
+              "stock": 5
+            }
+          ]
+        },
+        {
+          "color": "black",
+          "colorCode": "#333333",
+          "image": "/assets/product/7.jpg",
+          "size": [
+            {
+              "name": "x",
+              "stock": 4
+            },
+            {
+              "name": "m",
+              "stock": 7
+            },
+            {
+              "name": "xl",
+              "stock": 9
+            },
+            {
+              "name": "xxl",
+              "stock": 1
+            }
+          ]
+        },
+        {
+          "color": "red",
+          "colorCode": "#da323f",
+          "image": "/assets/product/8.jpg",
+          "size": [
+            {
+              "name": "x",
+              "stock": 1
+            },
+            {
+              "name": "m",
+              "stock": 2
+            },
+            {
+              "name": "xl",
+              "stock": 4
+            },
+            {
+              "name": "xxl",
+              "stock": 3
+            }
+          ]
+        }
+      ],
+      "thumbImage": [
+        "/assets/product/6.jpg",
+        "/assets/product/7.jpg"
+      ],
+      "image": [
+        "/assets/product/6.jpg",
+        "/assets/product/7.jpg",
+        "/assets/product/8.jpg",
+        "/assets/product/9.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "7",
+      "createDate": "July 17 2022 10:07:00 AM",
+      "sku": "asdf107",
+      "name": " fashion sev",
+      "slug": "fashion-sev",
+      "price": 23,
+      "discount": 0,
+      "featured": true,
+      "new": true,
+      "rating": 4,
+      "ratingCount": 11,
+      "saleCount": 96,
+      "category": [
+        "mobile",
+        "tv"
+      ],
+      "tag": [
+        "mobile",
+        "tv"
+      ],
+      "variation": [
+        {
+          "color": "brown",
+          "colorCode": "#87554b",
+          "image": "/assets/product/7.jpg",
+          "size": [
+            {
+              "name": "x",
+              "stock": 3
+            },
+            {
+              "name": "m",
+              "stock": 2
+            },
+            {
+              "name": "xl",
+              "stock": 5
+            }
+          ]
+        },
+        {
+          "color": "black",
+          "colorCode": "#333333",
+          "image": "/assets/product/8.jpg",
+          "size": [
+            {
+              "name": "x",
+              "stock": 4
+            },
+            {
+              "name": "m",
+              "stock": 7
+            },
+            {
+              "name": "xl",
+              "stock": 9
+            },
+            {
+              "name": "xxl",
+              "stock": 1
+            }
+          ]
+        },
+        {
+          "color": "red",
+          "colorCode": "#da323f",
+          "image": "/assets/product/9.jpg",
+          "size": [
+            {
+              "name": "x",
+              "stock": 1
+            },
+            {
+              "name": "m",
+              "stock": 2
+            },
+            {
+              "name": "xl",
+              "stock": 4
+            },
+            {
+              "name": "xxl",
+              "stock": 3
+            }
+          ]
+        }
+      ],
+      "thumbImage": [
+        "/assets/product/7.jpg",
+        "/assets/product/8.jpg"
+      ],
+      "image": [
+        "/assets/product/7.jpg",
+        "/assets/product/8.jpg",
+        "/assets/product/9.jpg",
+        "/assets/product/10.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "8",
+      "createDate": "July 18 2022 10:08:00 AM",
+      "sku": "asdf108",
+      "name": " fashion eight",
+      "slug": "fashion-eight",
+      "price": 24,
+      "discount": 17,
+      "featured": true,
+      "new": true,
+      "rating": 5,
+      "ratingCount": 12,
+      "saleCount": 97,
+      "category": [
+        "fashion",
+        "men"
+      ],
+      "tag": [
+        "fashion",
+        "men"
+      ],
+      "variation": [
+        {
+          "color": "brown",
+          "colorCode": "#87554b",
+          "image": "/assets/product/8.jpg",
+          "size": [
+            {
+              "name": "x",
+              "stock": 3
+            },
+            {
+              "name": "m",
+              "stock": 2
+            },
+            {
+              "name": "xl",
+              "stock": 5
+            }
+          ]
+        },
+        {
+          "color": "black",
+          "colorCode": "#333333",
+          "image": "/assets/product/9.jpg",
+          "size": [
+            {
+              "name": "x",
+              "stock": 4
+            },
+            {
+              "name": "m",
+              "stock": 7
+            },
+            {
+              "name": "xl",
+              "stock": 9
+            },
+            {
+              "name": "xxl",
+              "stock": 1
+            }
+          ]
+        },
+        {
+          "color": "red",
+          "colorCode": "#da323f",
+          "image": "/assets/product/10.jpg",
+          "size": [
+            {
+              "name": "x",
+              "stock": 1
+            },
+            {
+              "name": "m",
+              "stock": 2
+            },
+            {
+              "name": "xl",
+              "stock": 4
+            },
+            {
+              "name": "xxl",
+              "stock": 3
+            }
+          ]
+        }
+      ],
+      "thumbImage": [
+        "/assets/product/8.jpg",
+        "/assets/product/9.jpg"
+      ],
+      "image": [
+        "/assets/product/8.jpg",
+        "/assets/product/9.jpg",
+        "/assets/product/10.jpg",
+        "/assets/product/11.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "9",
+      "createDate": "July 19 2022 10:09:00 AM",
+      "sku": "asdf109",
+      "name": " fashion nine",
+      "slug": "fashion-nine",
+      "price": 25,
+      "discount": 18,
+      "featured": true,
+      "new": true,
+      "rating": 4,
+      "ratingCount": 13,
+      "saleCount": 98,
+      "category": [
+        "mobile",
+        "tv"
+      ],
+      "tag": [
+        "mobile",
+        "tv"
+      ],
+      "variation": [
+        {
+          "color": "brown",
+          "colorCode": "#87554b",
+          "image": "/assets/product/9.jpg",
+          "size": [
+            {
+              "name": "x",
+              "stock": 3
+            },
+            {
+              "name": "m",
+              "stock": 2
+            },
+            {
+              "name": "xl",
+              "stock": 5
+            }
+          ]
+        },
+        {
+          "color": "black",
+          "colorCode": "#333333",
+          "image": "/assets/product/10.jpg",
+          "size": [
+            {
+              "name": "x",
+              "stock": 4
+            },
+            {
+              "name": "m",
+              "stock": 7
+            },
+            {
+              "name": "xl",
+              "stock": 9
+            },
+            {
+              "name": "xxl",
+              "stock": 1
+            }
+          ]
+        },
+        {
+          "color": "red",
+          "colorCode": "#da323f",
+          "image": "/assets/product/11.jpg",
+          "size": [
+            {
+              "name": "x",
+              "stock": 1
+            },
+            {
+              "name": "m",
+              "stock": 2
+            },
+            {
+              "name": "xl",
+              "stock": 4
+            },
+            {
+              "name": "xxl",
+              "stock": 3
+            }
+          ]
+        }
+      ],
+      "thumbImage": [
+        "/assets/product/9.jpg",
+        "/assets/product/10.jpg"
+      ],
+      "image": [
+        "/assets/product/9.jpg",
+        "/assets/product/10.jpg",
+        "/assets/product/11.jpg",
+        "/assets/product/12.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "10",
+      "createDate": "July 20 2022 10:10:00 AM",
+      "sku": "asdf110",
+      "name": " fashion ten",
+      "slug": "fashion-ten",
+      "price": 26,
+      "discount": 19,
+      "featured": true,
+      "new": true,
+      "rating": 5,
+      "ratingCount": 14,
+      "saleCount": 99,
+      "category": [
+        "fashion",
+        "men"
+      ],
+      "tag": [
+        "fashion",
+        "men"
+      ],
+      "variation": [
+        {
+          "color": "brown",
+          "colorCode": "#87554b",
+          "image": "/assets/product/10.jpg",
+          "size": [
+            {
+              "name": "x",
+              "stock": 3
+            },
+            {
+              "name": "m",
+              "stock": 2
+            },
+            {
+              "name": "xl",
+              "stock": 5
+            }
+          ]
+        },
+        {
+          "color": "black",
+          "colorCode": "#333333",
+          "image": "/assets/product/11.jpg",
+          "size": [
+            {
+              "name": "x",
+              "stock": 4
+            },
+            {
+              "name": "m",
+              "stock": 7
+            },
+            {
+              "name": "xl",
+              "stock": 9
+            },
+            {
+              "name": "xxl",
+              "stock": 1
+            }
+          ]
+        },
+        {
+          "color": "red",
+          "colorCode": "#da323f",
+          "image": "/assets/product/12.jpg",
+          "size": [
+            {
+              "name": "x",
+              "stock": 1
+            },
+            {
+              "name": "m",
+              "stock": 2
+            },
+            {
+              "name": "xl",
+              "stock": 4
+            },
+            {
+              "name": "xxl",
+              "stock": 3
+            }
+          ]
+        }
+      ],
+      "thumbImage": [
+        "/assets/product/10.jpg",
+        "/assets/product/11.jpg"
+      ],
+      "image": [
+        "/assets/product/10.jpg",
+        "/assets/product/11.jpg",
+        "/assets/product/12.jpg",
+        "/assets/product/13.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "11",
+      "createDate": "July 21 2022 10:10:00 AM",
+      "sku": "asdf111",
+      "name": " furniture one",
+      "slug": "furniture-one",
+      "stock": 9,
+      "price": 200,
+      "discount": 19,
+      "featured": true,
+      "new": true,
+      "rating": 5,
+      "ratingCount": 14,
+      "saleCount": 99,
+      "category": [
+        "furniture"
+      ],
+      "tag": [
+        "furniture"
+      ],
+      "thumbImage": [
+        "/assets/product/1.jpg"
+      ],
+      "image": [
+        "/assets/product/1.jpg",
+        "/assets/product/2.jpg",
+        "/assets/product/3.jpg",
+        "/assets/product/4.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "12",
+      "createDate": "July 22 2022 10:10:00 AM",
+      "sku": "asdf112",
+      "name": " furniture two",
+      "slug": "furniture-two",
+      "stock": 8,
+      "price": 100,
+      "discount": 10,
+      "featured": false,
+      "new": false,
+      "rating": 4,
+      "ratingCount": 10,
+      "saleCount": 9,
+      "category": [
+        "furniture"
+      ],
+      "tag": [
+        "furniture"
+      ],
+      "thumbImage": [
+        "/assets/product/2.jpg"
+      ],
+      "image": [
+        "/assets/product/2.jpg",
+        "/assets/product/3.jpg",
+        "/assets/product/4.jpg",
+        "/assets/product/5.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "13",
+      "createDate": "July 23 2022 10:10:00 AM",
+      "sku": "asdf113",
+      "name": " furniture three",
+      "slug": "furniture-three",
+      "stock": 7,
+      "price": 90,
+      "discount": 20,
+      "featured": true,
+      "new": true,
+      "rating": 3,
+      "ratingCount": 15,
+      "saleCount": 5,
+      "category": [
+        "furniture"
+      ],
+      "tag": [
+        "furniture"
+      ],
+      "thumbImage": [
+        "/assets/product/3.jpg"
+      ],
+      "image": [
+        "/assets/product/3.jpg",
+        "/assets/product/4.jpg",
+        "/assets/product/5.jpg",
+        "/assets/product/6.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "14",
+      "createDate": "July 24 2022 10:10:00 AM",
+      "sku": "asdf114",
+      "name": " furniture four",
+      "slug": "furniture-four",
+      "stock": 6,
+      "price": 80,
+      "discount": 10,
+      "featured": false,
+      "new": false,
+      "rating": 4,
+      "ratingCount": 20,
+      "saleCount": 9,
+      "category": [
+        "furniture"
+      ],
+      "tag": [
+        "furniture"
+      ],
+      "thumbImage": [
+        "/assets/product/4.jpg"
+      ],
+      "image": [
+        "/assets/product/4.jpg",
+        "/assets/product/5.jpg",
+        "/assets/product/6.jpg",
+        "/assets/product/7.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "15",
+      "createDate": "July 25 2022 10:10:00 AM",
+      "sku": "asdf115",
+      "name": " furniture five",
+      "slug": "furniture-five",
+      "stock": 7,
+      "price": 70,
+      "discount": 15,
+      "featured": true,
+      "new": true,
+      "rating": 5,
+      "ratingCount": 25,
+      "saleCount": 10,
+      "category": [
+        "furniture"
+      ],
+      "tag": [
+        "furniture"
+      ],
+      "thumbImage": [
+        "/assets/product/5.jpg"
+      ],
+      "image": [
+        "/assets/product/5.jpg",
+        "/assets/product/6.jpg",
+        "/assets/product/7.jpg",
+        "/assets/product/8.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "16",
+      "createDate": "July 26 2022 10:10:00 AM",
+      "sku": "asdf116",
+      "name": " furniture six",
+      "slug": "furniture-six",
+      "stock": 8,
+      "price": 60,
+      "discount": 25,
+      "featured": false,
+      "new": false,
+      "rating": 4,
+      "ratingCount": 35,
+      "saleCount": 20,
+      "category": [
+        "furniture"
+      ],
+      "tag": [
+        "furniture"
+      ],
+      "thumbImage": [
+        "/assets/product/6.jpg"
+      ],
+      "image": [
+        "/assets/product/6.jpg",
+        "/assets/product/7.jpg",
+        "/assets/product/8.jpg",
+        "/assets/product/1.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "17",
+      "createDate": "July 27 2022 10:10:00 AM",
+      "sku": "asdf117",
+      "name": " furniture seven",
+      "slug": "furniture-seven",
+      "stock": 9,
+      "price": 50,
+      "discount": 15,
+      "featured": true,
+      "new": true,
+      "rating": 5,
+      "ratingCount": 40,
+      "saleCount": 30,
+      "category": [
+        "furniture"
+      ],
+      "tag": [
+        "furniture"
+      ],
+      "thumbImage": [
+        "/assets/product/7.jpg"
+      ],
+      "image": [
+        "/assets/product/7.jpg",
+        "/assets/product/8.jpg",
+        "/assets/product/1.jpg",
+        "/assets/product/2.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "18",
+      "createDate": "July 28 2022 10:10:00 AM",
+      "sku": "asdf118",
+      "name": " furniture eight",
+      "slug": "furniture-eight",
+      "stock": 10,
+      "price": 60,
+      "discount": 25,
+      "featured": true,
+      "new": true,
+      "rating": 5,
+      "ratingCount": 40,
+      "saleCount": 30,
+      "category": [
+        "furniture"
+      ],
+      "tag": [
+        "furniture"
+      ],
+      "thumbImage": [
+        "/assets/product/8.jpg"
+      ],
+      "image": [
+        "/assets/product/8.jpg",
+        "/assets/product/1.jpg",
+        "/assets/product/2.jpg",
+        "/assets/product/3.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "19",
+      "createDate": "July 29 2022 10:10:00 AM",
+      "sku": "asdf119",
+      "name": " product one",
+      "slug": "product-one",
+      "stock": 20,
+      "price": 10,
+      "discount": 0,
+      "featured": false,
+      "new": true,
+      "rating": 5,
+      "ratingCount": 40,
+      "saleCount": 30,
+      "category": [
+        "electronics"
+      ],
+      "tag": [
+        "electronics"
+      ],
+      "thumbImage": [
+        "/assets/product/1.jpg",
+        "/assets/product/1_1.jpg"
+      ],
+      "image": [
+        "/assets/product/1.jpg",
+        "/assets/product/2.jpg",
+        "/assets/product/3.jpg",
+        "/assets/product/4.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "20",
+      "createDate": "July 01 2022 10:10:00 AM",
+      "sku": "asdf120",
+      "name": " product two",
+      "slug": "product-two",
+      "stock": 30,
+      "price": 15,
+      "discount": 5,
+      "featured": false,
+      "new": false,
+      "rating": 4,
+      "ratingCount": 30,
+      "saleCount": 20,
+      "category": [
+        "electronics"
+      ],
+      "tag": [
+        "electronics"
+      ],
+      "thumbImage": [
+        "/assets/product/2.jpg",
+        "/assets/product/2_2.jpg"
+      ],
+      "image": [
+        "/assets/product/2.jpg",
+        "/assets/product/3.jpg",
+        "/assets/product/4.jpg",
+        "/assets/product/5.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "21",
+      "createDate": "July 02 2022 10:10:00 AM",
+      "sku": "asdf121",
+      "name": " product three",
+      "slug": "product-three",
+      "stock": 20,
+      "price": 18,
+      "discount": 15,
+      "featured": true,
+      "new": true,
+      "rating": 3,
+      "ratingCount": 20,
+      "saleCount": 10,
+      "category": [
+        "electronics"
+      ],
+      "tag": [
+        "electronics"
+      ],
+      "thumbImage": [
+        "/assets/product/3.jpg",
+        "/assets/product/3_3.jpg"
+      ],
+      "image": [
+        "/assets/product/3.jpg",
+        "/assets/product/4.jpg",
+        "/assets/product/5.jpg",
+        "/assets/product/6.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "22",
+      "createDate": "July 03 2022 10:10:00 AM",
+      "sku": "asdf122",
+      "name": " product four",
+      "slug": "product-four",
+      "stock": 30,
+      "price": 19,
+      "discount": 20,
+      "featured": false,
+      "new": false,
+      "rating": 5,
+      "ratingCount": 25,
+      "saleCount": 15,
+      "category": [
+        "electronics"
+      ],
+      "tag": [
+        "electronics"
+      ],
+      "thumbImage": [
+        "/assets/product/4.jpg",
+        "/assets/product/4_4.jpg"
+      ],
+      "image": [
+        "/assets/product/4.jpg",
+        "/assets/product/5.jpg",
+        "/assets/product/6.jpg",
+        "/assets/product/7.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "23",
+      "createDate": "July 04 2022 10:10:00 AM",
+      "sku": "asdf123",
+      "name": " product five",
+      "slug": "product-five",
+      "stock": 20,
+      "price": 9,
+      "discount": 10,
+      "featured": true,
+      "new": true,
+      "rating": 4,
+      "ratingCount": 20,
+      "saleCount": 10,
+      "category": [
+        "electronics"
+      ],
+      "tag": [
+        "electronics"
+      ],
+      "thumbImage": [
+        "/assets/product/5.jpg",
+        "/assets/product/5_5.jpg"
+      ],
+      "image": [
+        "/assets/product/5.jpg",
+        "/assets/product/6.jpg",
+        "/assets/product/7.jpg",
+        "/assets/product/8.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "24",
+      "createDate": "July 05 2022 10:10:00 AM",
+      "sku": "asdf124",
+      "name": " product six",
+      "slug": "product-six",
+      "stock": 20,
+      "price": 9,
+      "discount": 10,
+      "featured": true,
+      "new": true,
+      "rating": 4,
+      "ratingCount": 20,
+      "saleCount": 10,
+      "category": [
+        "electronics"
+      ],
+      "tag": [
+        "electronics"
+      ],
+      "thumbImage": [
+        "/assets/product/6.jpg",
+        "/assets/product/6_6.jpg"
+      ],
+      "image": [
+        "/assets/product/6.jpg",
+        "/assets/product/7.jpg",
+        "/assets/product/8.jpg",
+        "/assets/product/9.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "25",
+      "createDate": "July 06 2022 10:10:00 AM",
+      "sku": "asdf125",
+      "name": " product seven",
+      "slug": "product-seven",
+      "stock": 25,
+      "price": 10,
+      "discount": 15,
+      "featured": false,
+      "new": false,
+      "rating": 5,
+      "ratingCount": 10,
+      "saleCount": 15,
+      "category": [
+        "electronics"
+      ],
+      "tag": [
+        "electronics"
+      ],
+      "thumbImage": [
+        "/assets/product/7.jpg",
+        "/assets/product/7_7.jpg"
+      ],
+      "image": [
+        "/assets/product/7.jpg",
+        "/assets/product/8.jpg",
+        "/assets/product/9.jpg",
+        "/assets/product/10.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "26",
+      "createDate": "July 07 2022 10:10:00 AM",
+      "sku": "asdf126",
+      "name": " product eight",
+      "slug": "product-eight",
+      "stock": 15,
+      "price": 15,
+      "discount": 5,
+      "featured": true,
+      "new": true,
+      "rating": 4,
+      "ratingCount": 14,
+      "saleCount": 10,
+      "category": [
+        "electronics"
+      ],
+      "tag": [
+        "electronics"
+      ],
+      "thumbImage": [
+        "/assets/product/8.jpg",
+        "/assets/product/8_8.jpg"
+      ],
+      "image": [
+        "/assets/product/8.jpg",
+        "/assets/product/9.jpg",
+        "/assets/product/10.jpg",
+        "/assets/product/11.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "27",
+      "createDate": "July 08 2022 10:10:00 AM",
+      "sku": "asdf127",
+      "name": " product nine",
+      "slug": "product-nine",
+      "stock": 20,
+      "price": 10,
+      "discount": 10,
+      "featured": false,
+      "new": false,
+      "rating": 5,
+      "ratingCount": 4,
+      "saleCount": 13,
+      "dealEnd": "July 07, 2021 12:12:00",
+      "category": [
+        "electronics"
+      ],
+      "tag": [
+        "electronics"
+      ],
+      "thumbImage": [
+        "/assets/product/9.jpg",
+        "/assets/product/9_9.jpg"
+      ],
+      "image": [
+        "/assets/product/9.jpg",
+        "/assets/product/10.jpg",
+        "/assets/product/11.jpg",
+        "/assets/product/12.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "28",
+      "createDate": "July 09 2022 10:10:00 AM",
+      "sku": "asdf128",
+      "name": " product ten",
+      "slug": "product-ten",
+      "stock": 25,
+      "price": 15,
+      "discount": 15,
+      "featured": true,
+      "new": true,
+      "rating": 4,
+      "ratingCount": 10,
+      "saleCount": 15,
+      "dealEnd": "July 07, 2021 12:12:00",
+      "category": [
+        "electronics"
+      ],
+      "tag": [
+        "electronics"
+      ],
+      "thumbImage": [
+        "/assets/product/10.jpg",
+        "/assets/product/10_10.jpg"
+      ],
+      "image": [
+        "/assets/product/10.jpg",
+        "/assets/product/11.jpg",
+        "/assets/product/12.jpg",
+        "/assets/product/1.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "29",
+      "createDate": "July 10 2022 10:10:00 AM",
+      "sku": "asdf129",
+      "name": " product eleven",
+      "slug": "product-eleven",
+      "stock": 20,
+      "price": 25,
+      "discount": 10,
+      "featured": false,
+      "new": false,
+      "rating": 5,
+      "ratingCount": 15,
+      "saleCount": 15,
+      "dealEnd": "July 07, 2021 12:12:00",
+      "category": [
+        "electronics"
+      ],
+      "tag": [
+        "electronics"
+      ],
+      "thumbImage": [
+        "/assets/product/11.jpg",
+        "/assets/product/11_11.jpg"
+      ],
+      "image": [
+        "/assets/product/11.jpg",
+        "/assets/product/12.jpg",
+        "/assets/product/1.jpg",
+        "/assets/product/2.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "id": "30",
+      "createDate": "July 11 2022 10:10:00 AM",
+      "sku": "asdf130",
+      "name": " product twelve",
+      "slug": "product-twelve",
+      "stock": 25,
+      "price": 20,
+      "discount": 0,
+      "featured": true,
+      "new": true,
+      "rating": 3,
+      "ratingCount": 5,
+      "saleCount": 10,
+      "dealEnd": "July 07, 2021 12:12:00",
+      "category": [
+        "electronics"
+      ],
+      "tag": [
+        "electronics"
+      ],
+      "thumbImage": [
+        "/assets/product/12.jpg",
+        "/assets/product/12_12.jpg"
+      ],
+      "image": [
+        "/assets/product/12.jpg",
+        "/assets/product/1.jpg",
+        "/assets/product/2.jpg",
+        "/assets/product/3.jpg"
+      ],
+      "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem.",
+      "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    }
+  ]
+}

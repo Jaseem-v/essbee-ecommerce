@@ -1,0 +1,262 @@
+//////////////////////////////
+///// single-product
+
+.single-product {
+  padding: 5rem 0;
+
+  &__zoom-image {
+    // display: flex;
+    // flex-direction: row-reverse;
+    overflow: hidden;
+    // position: relative;
+  }
+
+  &__thumbs {
+    margin-top: 1rem;
+    overflow: hidden;
+    position: relative;
+    // height: 100%;
+
+    .swiper-slide-thumb-active {
+      .single-product__thumbs-img-container {
+        border: 1px solid #d43839;
+      }
+    }
+
+    &-img-container {
+      border: 1px solid rgba(#4d4d4d, 0.7);
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(0.9);
+      }
+    }
+    .swiper {
+      height: 100%;
+    }
+
+    .swiper-slide {
+      height: auto !important;
+    }
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  &__img {
+    position: relative;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__details {
+    padding: 3rem;
+
+    h2 {
+      font-size: 2.5rem;
+      color: rgb(64, 69, 83);
+      // font-size: 1.6em;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: #4d4d4d;
+    }
+  }
+
+  &__price {
+    color: #d43839;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 2rem 0;
+  }
+}
+
+.react-slider__imgZoom {
+  height: 360px !important;
+}
+
+.react-slider__ul {
+  justify-content: space-between !important;
+  padding-left: 0;
+  li {
+    width: 22% !important;
+    /* height: auto; */
+    flex: auto !important;
+
+    &.active {
+      img {
+        border: 1px solid #d43839 !important;
+      }
+    }
+  }
+}
+
+//////////////////////////////////////
+///
+///
+/// //////////////////////////////////
+.product-info {
+  &-name {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 4px;
+  }
+
+  &-price-discount {
+    font-size: 22px;
+    font-weight: 400;
+    padding: 10px 0;
+    clear: both;
+    span {
+      &.line-through {
+        text-decoration: line-through;
+        margin-left: 10px;
+        font-size: 14px;
+        vertical-align: middle;
+        color: #a5a5a5;
+      }
+    }
+  }
+
+  // &-info {
+  //   width: 100%;
+  // }
+
+  &-count {
+    margin-top: 15px;
+    display: flex;
+    gap: 3rem;
+    .qtyminus,
+    .qtyplus {
+      width: 34px;
+      height: 34px;
+      background: #212529;
+      text-align: center;
+      font-size: 19px;
+      line-height: 36px;
+      color: #fff;
+      cursor: pointer;
+    }
+    .qtyminus {
+      border-radius: 3px 0 0 3px;
+    }
+    .qtyplus {
+      border-radius: 0 3px 3px 0;
+    }
+    .qty {
+      width: 60px;
+      text-align: center;
+    }
+  }
+
+  &-dtl {
+    padding: 3rem;
+
+    p {
+      font-size: 14px;
+      line-height: 24px;
+      color: #7a7a7a;
+    }
+    .form-control {
+      font-size: 15px;
+    }
+    label {
+      line-height: 16px;
+      font-size: 15px;
+    }
+  }
+
+  .round-black-btn {
+    border-radius: 4px;
+    background: #212529;
+    color: #fff;
+    padding: 7px 45px;
+    display: inline-block;
+    margin-top: 20px;
+    border: solid 2px #212529;
+    transition: all 0.5s ease-in-out 0s;
+
+    &:hover,
+    &:focus {
+      background: transparent;
+      color: #212529;
+      text-decoration: none;
+    }
+  }
+
+  .display-flex {
+    display: flex;
+  }
+  .align-center {
+    align-items: center;
+  }
+  .reviews-counter {
+    font-size: 13px;
+    span {
+      vertical-align: -2px;
+      font-size: 13px;
+    }
+  }
+  .rate {
+    float: left;
+    padding: 0 10px 0 0;
+
+    &:not(:checked) {
+      & > input {
+        position: absolute;
+        top: -9999px;
+      }
+      & > label {
+        float: right;
+        width: 15px;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 21px;
+        color: #ccc;
+        margin-bottom: 0;
+        line-height: 21px;
+        &:before {
+          content: "\2605";
+        }
+      }
+    }
+    & > input {
+      &:checked {
+        & ~ label {
+          color: #ffc700;
+        }
+      }
+    }
+  }
+  .rate:not(:checked) > label:hover,
+  .rate:not(:checked) > label:hover ~ label {
+    color: #deb217;
+  }
+  .rate > input:checked + label:hover,
+  .rate > input:checked + label:hover ~ label,
+  .rate > input:checked ~ label:hover,
+  .rate > input:checked ~ label:hover ~ label,
+  .rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+  }
+  .form-control {
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  label {
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none !important;
+
+  &:hover {
+    color: currentColor;
+  }
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+body {
+  // font-family: "Jost", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  // overflow: hidden;
+}
+
+img {
+  width: 100%;
+  // border-radius: 5px;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+
+:root {
+  --responsive-font: 1.83rem;
+  --transition-timing: 0.2s ease;
+}
+
+/* ---------const------------*/
+
+$bp-xlarge: 112.5em; //1800px
+$bp-largest: 75em; //1200px
+$bp-992: 61.875em; //990
+$bp-small: 52.25em; //900px
+$bp-xsmall: 37.5em; //600px
+$bp-380: 23.75em; //380
+$bp-340: 21.25em; //340
+$bp-290: 18.125em; //290
+/* ----xx-----const-------xx-----*/
+
+html {
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 56.25%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $bp-xsmall) {
+    // font-size: 48.75%;
+  }
+
+  @media only screen and (max-width: $bp-380) {
+    font-size: 44%;
+  }
+
+  @media only screen and (max-width: $bp-340) {
+    font-size: 42%;
+  }
+
+  @media only screen and (max-width: $bp-290) {
+    font-size: 35%;
+  }
+
+  @media only screen and (min-width: $bp-xlarge) {
+    font-size: 75%;
+  }
+}
+
+.container {
+  max-width: 97% !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  border-radius: 100%;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3px -1px !important;
+  border: 1px solid rgb(204, 204, 204) !important;
+  height: 30px !important;
+  width: 30px !important;
+  background: rgb(255, 255, 255);
+
+  &::after {
+    font-size: 14px !important;
+    color: rgb(0, 0, 0) !important;
+    text-align: center !important;
+  }
+}
+
+
+.btn {
+  background: #fff !important;
+  color: #4d4d4d !important;
+  border: solid 1px #4d4d4d !important;
+  padding: 0.5rem 1rem !important;
+  font-size: 1.5rem !important;
+}
+
+@import "navbar";
+@import "homepage";
+@import "product-details";

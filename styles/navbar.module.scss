@@ -1,0 +1,16 @@
+.navbar {
+    padding: 2rem 1rem;
+    // width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+        display: flex;
+    }
+
+    img{
+        width: 15rem;
+    }
+
+}
