@@ -31,8 +31,17 @@
     display: flex;
     align-items: center;
 
+    @media only screen and (max-width: $bp-xsmall) {
+        display: block;
+    }
+
     .banner_side_img {
         max-width: 29.3%;
+
+        @media only screen and (max-width: $bp-xsmall) {
+            max-width: 100%;
+
+        }
     }
 }
 
@@ -248,9 +257,14 @@ header {
         }
 
         &:hover {
-            color: #fff;
+            color: #fff !important;
             background: #D43839;
             box-shadow: 0 0px 11px hsla(0, 0%, 0%, 0.1);
+
+            i {
+                color: #fff !important;
+
+            }
         }
 
 
@@ -346,4 +360,3 @@ header {
 .kitchen_stores {
     background: #fff;
 }
-

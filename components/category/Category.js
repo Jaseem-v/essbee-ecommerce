@@ -15,18 +15,18 @@ import axios from 'axios';
 
 function Category() {
     const [data, setData] = useState([
-        { id: 1, text: "Choclates" },
-        { id: 2, text: "personal care" },
-        { id: 3, text: "Kitchen " },
+        { id: 1, text: "Computers" },
+        { id: 2, text: "Television" },
+        { id: 3, text: "Mobilephone" },
         { id: 4, text: "fridge" },
-        { id: 5, text: "smartphone" },
-        { id: 6, text: "computer Devices" },
-        { id: 7, text: "Television" },
-        { id: 8, text: "home Baking" },
-        { id: 1, text: "home Baking" },
-        { id: 2, text: "home Baking" },
-        { id: 3, text: "home Baking" },
-        { id: 4, text: "home Baking" },
+        { id: 5, text: "Camera" },
+        { id: 6, text: "Home theater" },
+        { id: 7, text: "Gamestation" },
+        { id: 8, text: "AC" },
+        { id: 9, text: "Speaker" },
+        { id: 10, text: "Watches" },
+        { id: 11, text: "Trimmer" },
+        { id: 12, text: "Lamps" },
         // { id: 5, text: "home Baking" },
     ])
 
@@ -50,7 +50,7 @@ function Category() {
                         spaceBetween: 10,
                     },
                     1200: {
-                        slidesPerView: 12,
+                        slidesPerView: 10,
                         spaceBetween: 10,
                     },
                 }}

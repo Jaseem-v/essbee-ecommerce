@@ -1,26 +1,19 @@
-import { createSlice } from '@reduxjs/toolkit'
+// import { createSlice } from '@reduxjs/toolkit'
+import productData from "../../data/products.json"
 
 
-export const counterSlice = createSlice({
-    name: 'products',
-    initialState: {
-        value: [],
-        // isLoading: true,
-    },
-    reducers: {
-        // loading: (state, action) => {
-        //     state.isLoading = action.payload
-        // },
-        // decrement: (state) => {
-        //     state.value -= 1
-        // },
-        updateStore: (state, action) => {
-            state.value = action.payload
-        },
-    },
-})
 
-// Action creators are generated for each case reducer function
-export const { updateStore } = counterSlice.actions
 
-export default counterSlice.reducer
+const initialState = [];
+
+
+export const productReducer = (state = initialState, action) => {
+    switch (action.type) {
+        case "ADD_PRODUCT_TO_STORE":
+            return [...state, ...action.payload]
+        default:
+            return state
+    }
+}
+
+

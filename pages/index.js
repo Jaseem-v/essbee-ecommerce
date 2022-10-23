@@ -7,33 +7,31 @@ import Category from '../components/category/Category'
 import SliderLayout from '../components/sliderLayout/SliderLayout'
 import { useSelector, useDispatch } from 'react-redux'
 import { updateStore } from '../redux/reducer/productsReducer'
+import { randomProducts } from '../components/utility'
 
-export default function Home({ allProducts }) {
 
-  const products = useSelector((state) => state.products.value)
+
+export default function Home() {
+
+  const products = useSelector((state) => state.products)
+
+
+
   // const isLoading = useSelector((state) => state.products.isLoading)
-  const dispatch = useDispatch();
-
- 
-
-  useEffect(() => {
-    dispatch(updateStore(allProducts));
-  }, [allProducts])
+  // const dispatch = useDispatch();
 
 
 
-
-  const randomProducts = ([...arr], n = 1) => {
-    let m = arr.length;
-    while (m) {
-      const i = Math.floor(Math.random() * m--);
-      [arr[m], arr[i]] = [arr[i], arr[m]];
-    }
-    return arr.slice(0, n);
-  };
+  // useEffect(() => {
+  //   dispatch(updateStore(allProducts));
+  // }, [allProducts])
 
 
-  console.log("products", products);
+
+
+
+
+
 
 
 
@@ -85,19 +83,3 @@ export default function Home({ allProducts }) {
 
 
 
-
-
-export const getStaticProps = async () => {
-
-  // Fetching data from jsonplaceholder.
-  const res = await fetch(process.env.DB_HOST);
-  let allProducts = await res.json();
-
-
-  // Sending fetched data to the page component via props.
-  return {
-    props: {
-      allProducts
-    }
-  }
-}

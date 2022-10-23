@@ -1,0 +1,76 @@
+--------------
+***frontend***
+--------------
+
+*home*
+
+ - navigation
+ - banner 
+ - about 
+ - services 
+ - doctorteam 
+ - gallery 
+ - appoinment 
+ - contact 
+ - map 
+ - footer
+
+*about*
+
+ - navigation
+ - about  detailed
+ - all doctors team
+ - testimonial
+ - footer
+
+*service*
+
+ - navigation
+ - detailed services page
+ - footer
+
+*gallery*
+
+ - navigation
+ - all gallery items
+ - footer
+
+*testimonials*
+ - navigation
+ - all testimonials
+ - footer
+
+*contact*
+
+ - contact details
+ - contact form
+ - google map
+
+-------------
+***admin***
+-------------
+
+*appoinment*
+
+ - all appoinments list
+
+*Doctors*
+
+ - list all doctors details
+ - add doctors details
+ - delete doctors details
+ - update added doctors details
+
+*gallery*
+
+ - list all images
+ - add images
+ - delete images
+ - update added images
+
+*testimonial*
+
+ - list all testimonial 
+ - add testimonial 
+ - delete testimonial 
+ - edit testimonials

@@ -1,28 +1,45 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/router";
-import axios from "axios";
-import { Swiper, SwiperSlide } from "swiper/react";
-import Drift from 'drift-zoom';
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/navigation";
-import "swiper/css/thumbs";
-
-import { FreeMode, Navigation, Thumbs } from "swiper";
-import Image from "next/image";
+import { useDispatch, useSelector } from 'react-redux'
 import ProductSlider from "../../../components/productSlider/ProductSlider";
+import SliderLayout from "../../../components/sliderLayout/SliderLayout";
+import ProductDetailsTab from "../../../components/productDetailsTab/ProductDetailsTab";
+import { discountPriceCalculator, randomProducts } from "../../../components/utility";
+import { addProductCartAlert, addproductToCart, addproductToWishList, addWishListAlert, removeproductfromWishList, removeWishListAlert } from "../../../redux/action/reduxAction"
+import { Snackbar } from "@mui/material";
+import MuiAlert from '@mui/material/Alert';
+import AlrtMsg from "../../../components/alrtmsg/AlrtMsg";
+
+
+const Alert = React.forwardRef(function Alert(props, ref) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
+
 
 export default function Details() {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [product, setProduct] = useState([]);
+  const [counter, setCounter] = useState(1);
+  const slider_products = useSelector((state) => state.products)
+  const wishListReducer = useSelector((state) => state.wishListReducer)
 
-  const [mainImage, setMainImage] = useState("")
-  const imageref = useRef(null);
+  const dispatch = useDispatch();
 
+  const addcarthandler = (items) => {
+    dispatch(addproductToCart(items, counter))
+    dispatch(addProductCartAlert())
 
+  }
 
+  const addWishListhandler = (items) => {
+    dispatch(addproductToWishList(items))
+    dispatch(addWishListAlert())
+  }
+
+  const removeWishListProduct = (id) => {
+    dispatch(removeproductfromWishList(id))
+    dispatch(removeWishListAlert())
+
+  }
 
 
   const router = useRouter();
@@ -32,217 +49,197 @@ export default function Details() {
     const fetchProducts = async () => {
       const res = await fetch(`http://localhost:8000/products/${id}`);
       let singleProduct = await res.json();
-
-      console.log("res pr", singleProduct);
-
       setProduct(singleProduct);
     };
     fetchProducts();
   }, [id]);
 
+  const handleIncrement = () => {
+    setCounter(prevCount => prevCount + 1);
+  };
 
-  useEffect(() => {
-    if (product) {
-      setMainImage(imageref.current)
+  //Create handleDecrement event handler
+  const handleDecrement = () => {
+    if (counter <= 1) return;
+    setCounter(prevCount => prevCount - 1);
+  };
 
-      console.log("products fetch", mainImage);
-
-      if (mainImage) {
-        new Drift(mainImage, {
-          paneContainer: document.querySelector(".single-product__details")
-        });
-      }
-    }
-  }, [product, mainImage])
-
-  const discountPriceCalculator = (discount, totalPrice) => {
-    return (totalPrice * 70) - ((discount / 100) * (totalPrice * 70))
+  const isWishList = () => {
+    return wishListReducer.wishlist.some(el => el.id == product.id)
   }
+
+
+
+
+  
+
+
 
   return (
     <div className="single-product">
       <div className="container">
         <div className="row">
-          <div className="col-md-5">
-            {/* <div className="single-product__zoom-image row">
-              <div className="col-md-3">
-                <div
-                  className="single-product__thumbs"
+          <div className="col-md-4">
 
-                >
-                  <Swiper
-                    onSwiper={setThumbsSwiper}
-                    spaceBetween={10}
-                    slidesPerView={3}
-                    freeMode={true}
-                    watchSlidesProgress={true}
-                    modules={[FreeMode, Navigation, Thumbs]}
-                    className="mySwiper"
-                    direction="vertical"
-                  >
-                    {product.image &&
-                      product.image.map((el, i) => (
-                        <SwiperSlide key={i}>
-                          <div className="single-product__thumbs-img-container">
-                            <img src={el} alt={"name"} />
-                          </div>
-                        </SwiperSlide>
-                      ))}
-                  </Swiper>
-                </div>
-              </div>
-
-              <div className="col-md-9">
-                <div className="single-product__main-img">
-                  <Swiper
-                    style={{
-                      "--swiper-navigation-color": "#D43839",
-                      "--swiper-pagination-color": "#D43839",
-                    }}
-                    spaceBetween={10}
-                    navigation={true}
-                    thumbs={{
-                      swiper:
-                        thumbsSwiper && !thumbsSwiper.destroyed
-                          ? thumbsSwiper
-                          : null,
-                    }}
-                    modules={[FreeMode, Navigation, Thumbs]}
-                    className="mySwiper2"
-                  >
-                    {product.image &&
-                      product.image.map((el, i) => (
-                        <SwiperSlide key={i}>
-                          <div className="single-product__img">
-                            <img src={el} ref={imageref} class="drift-demo-trigger" data-zoom="https://awik.io/demo/webshop-zoom/shoe-large.jpg" />
-                          </div>
-                        </SwiperSlide>
-                      ))}
-                  </Swiper>
-                </div>
-              </div>
-            </div> */}
-
-
-            <ProductSlider />
+            {product.image &&
+              <ProductSlider imageData={product.image} />}
           </div>
-          {/* <div className="col-md-6">
-            <div className="single-product__details">
-              <h2>{product.name}</h2>
 
-              <h1 className="single-product__price">Rs {product.price * 70}</h1>
-
-              <p>{product.fullDescription}</p>
-            </div>
-          </div> */}
-
-
-
-          <div className="col-md-6 product-info">
-            <div className="product-info-dtl">
+          <div className="col-md-5 product-page">
+            <div className="product-page__dtl">
               <div className="">
-                <div className="product-info-name">{product.name}</div>
+                <div className="product-page__name">{product.name}</div>
                 <div className="reviews-counter">
                   <div className="rate">
-                    <input type="radio" id="star5" name="rate" value="5" checked />
-                    <label htmlFor="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" checked />
-                    <label htmlFor="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" checked />
-                    <label htmlFor="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label htmlFor="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label htmlFor="star1" title="text">1 star</label>
+                    <i className="fa fa-star"></i>
+                    <i className="fa fa-star"></i>
+                    <i className="fa fa-star"></i>
+                    <i className="fa fa-star"></i>
+                    <i className="fa fa-star-half-o"></i>
                   </div>
                   <span>{product.ratingCount} Reviews</span>
                 </div>
-                <div className="product-info-price-discount"><span>Rs {discountPriceCalculator(product.discount, product.price)}</span><span className="line-through">Rs {product.price * 70}</span></div>
               </div>
-              <p>{product.fullDescription}</p>
-              <div className="row">
-                <div className="col-md-6">
-                  <label htmlFor="size">Size</label>
-                  <select id="size" name="size" className="form-control">
-                    <option>S</option>
-                    <option>M</option>
-                    <option>L</option>
-                    <option>XL</option>
-                  </select>
-                </div>
-                <div className="col-md-6">
-                  <label htmlFor="color">Color</label>
-                  <select id="color" name="color" className="form-control">
-                    <option>Blue</option>
-                    <option>Green</option>
-                    <option>Red</option>
-                  </select>
+              <p className="product-page__description">{product.fullDescription}</p>
+              <div className="product-page__stock-stats">
+                <h6>INSTOCK</h6>
+                <h6>SKU : 102.05 </h6>
+              </div>
+
+              <hr className="product-page__hr" />
+
+              <ul className="product-page__product-features">
+                <li>128 GB ROM</li>
+                <li> 15.49 cm (6.1 inch) Super Retina XDR Display</li>
+                <li> 12MP + 12MP | 12MP Front Camera</li>
+                <li> A14 Bionic Chip with Next Generation Neural Engine Processor</li>
+                <li> Ceramic Shield</li>
+                <li> IP68 Water Resistance</li>
+                <li> All Screen OLED Display</li>
+                <li> 1 YEAR BRAND WARRANTY</li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div className="col-md-3">
+            <div className="product-page__right-end">
+
+              <div className="product-page__color-picker">
+                <h2 className="product-page__sub-title">
+                  Color
+                </h2>
+
+                <div className="product-page__color-picker-container">
+                  <input type="radio" name="color" id="color-1" value="red" />
+                  <label htmlFor="color-1">
+                    <img src="/color-variation/APPLE_iPhone_12_Green-1.jpg" alt="" />
+                  </label>
+                  <input type="radio" name="color" id="color-2" value="red" />
+                  <label htmlFor="color-2">
+                    <img src="/color-variation/apple-iphone-12-2.jpeg" alt="" />
+                  </label>
+                  <input type="radio" name="color" id="color-3" value="red" />
+                  <label htmlFor="color-3">
+                    <img src="/color-variation/Apple_iPhone_12-1.jpeg" alt="" />
+                  </label>
+                  <input type="radio" name="color" id="color-4" value="red" />
+                  <label htmlFor="color-4">
+                    <img src="/color-variation/APPLE_iPhone_12_Red-1.jpg" alt="" />
+                  </label>
+
                 </div>
               </div>
-              <label htmlFor="size">Quantity</label>
-              <div className="product-info-count">
-                <div>
-                  <form action="#" className="display-flex">
-                    <div className="qtyminus">-</div>
-                    <input type="text" name="quantity" value="1" className="qty" />
-                    <div className="qtyplus">+</div>
-                  </form>
+
+              <div className="product-page__storage">
+                <h2 className="product-page__sub-title">
+                  Internal Storage:
+                </h2>
+
+                <div className="product-page__storage-container">
+
+                  <input type="radio" name="storage" id="storage-1" />
+                  <label htmlFor="storage-1">
+                    128 Gb
+                  </label>
+                  <input type="radio" name="storage" id="storage-2" />
+                  <label htmlFor="storage-2">
+                    64 Gb
+                  </label>
+                  <input type="radio" name="storage" id="storage-3" />
+                  <label htmlFor="storage-3">
+                    32 Gb
+                  </label>
                 </div>
-                <a href="#" className="round-black-btn">Add to Cart</a>
+
               </div>
+
+              <div className="product-page__quantity">
+                <h5 className="product-page__quantity-text">
+                  Quantity
+                </h5>
+                <div className="product-page__quantity-counter">
+                  <button onClick={handleDecrement}>-</button>
+                  <h6>{counter}</h6>
+                  <button onClick={handleIncrement}>+</button>
+
+                </div>
+              </div>
+              <div className="product-page__price-discount">
+                <span>Rs {discountPriceCalculator(product.discount, product.price)}
+                </span>
+                <span className="line-through">
+                  Rs {product.price * 70}
+                </span>
+              </div>
+
+              <div className="product-page__delivery">
+                <div className="product__page">
+
+                </div>
+              </div>
+
+
+              <div className="product-page__btn-set">
+                <button className="product-page__btn" onClick={() => addcarthandler(product)}>
+                  Add to Cart
+                </button>
+                {isWishList() ?
+                  <button className="product-page__btn--wishlist" onClick={() => removeWishListProduct(product.id)}>
+                    <i className="fa fa-heart wish-heart" ></i>
+
+                  </button>
+                  :
+                  <button className="product-page__btn--wishlist" onClick={() => addWishListhandler(product)}>
+                    <i className="fa fa-heart-o wish-heart"></i>
+                  </button>
+                }
+              </div>
+              <button className="product-page__btn product-page__btn--buy">
+                Buy It Now !
+              </button>
             </div>
           </div>
 
         </div>
+
+
+        <ProductDetailsTab />
+
+        <div className="product-page__bottom-slider">
+
+
+          {slider_products &&
+
+            <SliderLayout title='Related Products' products={randomProducts(slider_products, 10)} />
+          }
+        </div>
+
       </div>
-    </div>
+
+    </div >
   );
 }
 
-// export const getStaticProps = async () => {
-
-//   // Fetching data from jsonplaceholder.
-
-//   // Sending fetched data to the page component via props.
-//   return {
-//     props: {
-//       singleProduct
-//     }
-//   }
-// }
-
-// category: Array(1)
-// 0: "electronics"
-// length: 1
-// [[Prototype]]: Array(0)
-// createDate: "July 04 2022 10:10:00 AM"
-// discount: 10
-// featured: true
-// fullDescription: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
-// id: "23"
-// image: Array(4)
-// 0: "/assets/product/5.jpg"
-// 1: "/assets/product/6.jpg"
-// 2: "/assets/product/7.jpg"
-// 3: "/assets/product/8.jpg"
-// length: 4
-// [[Prototype]]: Array(0)
-// name: " product five"
-// new: true
-// price: 9
-// rating: 4
-// ratingCount: 20
-// saleCount: 10
-// shortDescription: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem."
-// sku: "asdf123"
-// slug: "product-five"
-// stock: 20
-// tag: Array(1)
-// 0: "electronics"
-// length: 1
-// [[Prototype]]: Array(0)
-// thumbImage: Array(2)
-// 0: "/assets/product/5.jpg"
-// 1: "/assets/product/5_5.jpg"
 
 

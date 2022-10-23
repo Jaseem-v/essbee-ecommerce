@@ -1,0 +1,179 @@
+.header {
+    width: 100%;
+
+    @media only screen and (max-width: $bp-992) {
+        height: auto;
+    }
+
+    &__bg {
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 40rem;
+        z-index: 0;
+        margin-left: -.1rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+
+        // &--1 {
+        //   background-image: url(../../../assets/img/banner-slide-1.jpg);
+        // }
+        // &--2 {
+        //   background-image: url(../../../assets/img/banner-slide-2.jpg);
+        // }
+
+        @media only screen and (max-width: $bp-992) {
+            height: 50rem;
+        }
+
+        &::before {
+            content: "";
+            height: 100%;
+            width: 100%;
+            background-color: rgb(0, 0, 0, 0.7);
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+    }
+
+    &__left-part,
+    &__right-part {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        z-index: 5;
+
+        @media only screen and (max-width: $bp-992) {
+            height: auto;
+            align-items: center;
+            padding: 3rem;
+        }
+    }
+
+    &__left-part {
+        color: #fff;
+
+        @media only screen and (max-width: $bp-992) {
+            padding: 5rem 1rem;
+        }
+    }
+
+    &__right-part {
+        & img {
+            width: 100%;
+        }
+    }
+
+    ///////////////
+    //slider
+
+    .owl-item {
+        &.active {
+            h1 {
+                -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-name: fadeInDown;
+                animation-delay: 0.3s;
+            }
+
+            p {
+                -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-name: fadeInDown;
+                animation-delay: 0.3s;
+            }
+
+            .btn {
+                -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-name: fadeInUp;
+                animation-delay: 0.3s;
+            }
+        }
+    }
+
+    .owl-nav {
+        .owl-prev {
+            position: absolute;
+            left: 15px;
+            top: 43%;
+            opacity: 0;
+            -webkit-transition: all 0.4s ease-out;
+            transition: all 0.4s ease-out;
+            background: rgba(0, 0, 0, 0.5) !important;
+            width: 40px;
+            cursor: pointer;
+            height: 40px;
+            position: absolute;
+            display: block;
+            z-index: 1000;
+            border-radius: 0;
+
+            span {
+                font-size: 1.6875rem;
+                color: #fff;
+            }
+
+            &:focus {
+                outline: 0;
+            }
+
+            &:hover {
+                background: #000 !important;
+            }
+        }
+
+        .owl-next {
+            position: absolute;
+            right: 15px;
+            top: 43%;
+            opacity: 0;
+            -webkit-transition: all 0.4s ease-out;
+            transition: all 0.4s ease-out;
+            background: rgba(0, 0, 0, 0.5) !important;
+            width: 40px;
+            cursor: pointer;
+            height: 40px;
+            position: absolute;
+            display: block;
+            z-index: 1000;
+            border-radius: 0;
+
+            span {
+                font-size: 1.6875rem;
+                color: #fff;
+            }
+
+            &:focus {
+                outline: 0;
+            }
+
+            &:hover {
+                background: #000 !important;
+            }
+        }
+    }
+
+    &:hover {
+        .owl-prev {
+            left: 0px;
+            opacity: 1;
+        }
+
+        .owl-next {
+            right: 0px;
+            opacity: 1;
+        }
+    }
+}
