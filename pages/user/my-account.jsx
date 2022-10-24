@@ -335,6 +335,8 @@ const MyAccount = () => {
                                             </Card.Body>
                                         </Card>
                                     </Tab.Pane>
+
+                                    
                                     <Tab.Pane eventKey="password">
                                         <Card className="my-account-content__content">
                                             <Card.Header >
