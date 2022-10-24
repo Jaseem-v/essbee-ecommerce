@@ -4,13 +4,16 @@ import Image from 'next/image'
 import Link from "next/link"
 import { useDispatch, useSelector } from 'react-redux'
 import { addProductToStore } from '../../redux/action/reduxAction'
+import productData from "../../data/products.json"
 
-const fetchProducts = async () => {
-  const res = await fetch(`http://localhost:8000/products`);
-  let product = await res.json();
+// const fetchProducts = async () => {
+//   const res = await fetch(`http://localhost:8000/products`);
+//   let product = await res.json();
 
-  return product
-};
+//   return product
+// };
+
+console.log(productData.products);
 
 export default function Navbar() {
 
@@ -31,10 +34,7 @@ export default function Navbar() {
   });
 
   useEffect(() => {
-    let data = fetchProducts()
-    data.then((res) => {
-      dispatch(addProductToStore(res))
-    });
+    dispatch(addProductToStore(productData.products))
   }, [])
 
 

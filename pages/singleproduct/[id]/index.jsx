@@ -9,6 +9,7 @@ import { addProductCartAlert, addproductToCart, addproductToWishList, addWishLis
 import { Snackbar } from "@mui/material";
 import MuiAlert from '@mui/material/Alert';
 import AlrtMsg from "../../../components/alrtmsg/AlrtMsg";
+import productData from "../../../data/products.json"
 
 
 const Alert = React.forwardRef(function Alert(props, ref) {
@@ -47,12 +48,15 @@ export default function Details() {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const res = await fetch(`http://localhost:8000/products/${id}`);
-      let singleProduct = await res.json();
-      setProduct(singleProduct);
+      let singleProduct = await productData.products.filter(el => el.id === id)
+
+      // console.log(singleProduct[0]);
+      setProduct(singleProduct[0]);
     };
     fetchProducts();
   }, [id]);
+
+  // console.log(product);
 
   const handleIncrement = () => {
     setCounter(prevCount => prevCount + 1);
@@ -71,7 +75,7 @@ export default function Details() {
 
 
 
-  
+
 
 
 
