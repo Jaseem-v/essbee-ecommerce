@@ -19,7 +19,7 @@ import Tab from "react-bootstrap/Tab";
 import Nav from "react-bootstrap/Nav";
 import Card from "react-bootstrap/Card";
 import { useState } from "react";
-import UserAddress from "../../components/user/userAddress";
+// import UserAddress from "../../components/user/userAddress";
 
 const MyAccount = () => {
 
@@ -238,8 +238,8 @@ const MyAccount = () => {
                                                         </a>
                                                     }
                                                 </div> */}
-                                                <UserAddress />
-                                                <UserAddress />
+                                                {/* <UserAddress />
+                                                <UserAddress /> */}
 
 
                                             </Card.Body>
@@ -336,7 +336,7 @@ const MyAccount = () => {
                                         </Card>
                                     </Tab.Pane>
 
-                                    
+
                                     <Tab.Pane eventKey="password">
                                         <Card className="my-account-content__content">
                                             <Card.Header >
