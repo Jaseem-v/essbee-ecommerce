@@ -51,7 +51,7 @@ export default function Navbar() {
         {/* <div className='d-flex navigation__search-logo-div'> */}
         <Link href="/" >
           <a className="navigation__logo">
-            <img src="/eb_logo.png" alt="logo" />
+            <img src="/logo_white.png" alt="logo" />
           </a>
         </Link>
 
