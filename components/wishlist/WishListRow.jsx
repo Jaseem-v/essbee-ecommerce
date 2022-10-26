@@ -1,19 +1,24 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { discountPriceCalculator } from '../utility';
-import { addproductToCart, removeproductfromWishList } from '../../redux/action/reduxAction';
+import { addProductCartAlert, addproductToCart, removeproductfromWishList, removeWishListAlert } from '../../redux/action/reduxAction';
 
 export default function WishListRow({ cartItem }) {
     const dispatch = useDispatch();
 
     const addcarthandler = (items) => {
-        dispatch(addproductToCart(items,1))
+        dispatch(addproductToCart(items, 1))
+        dispatch(removeproductfromWishList(cartItem.id))
+        dispatch(addProductCartAlert())
+
     }
 
     //Create handleDecrement event handler
 
     const handleRemove = () => {
         dispatch(removeproductfromWishList(cartItem.id))
+        dispatch(removeWishListAlert())
+
     };
     const price = Math.round(discountPriceCalculator(cartItem.discount, cartItem.price))
 

@@ -1,6 +1,7 @@
 const initialState = {
     cart: [],
     addCartAlert: false,
+    removeCartAlert:false
 }
 
 export const cartReducer = (state = initialState, action) => {
@@ -55,6 +56,14 @@ export const cartReducer = (state = initialState, action) => {
         case "CART__ADD__ALERT__CLOSE":
             return {
                 ...state, addCartAlert: false
+            }
+        case "CART__REMOVE__ALERT":
+            return {
+                ...state, removeCartAlert: true
+            }
+        case "CART__REMOVE__ALERT__CLOSE":
+            return {
+                ...state, removeCartAlert: false
             }
         default:
             return state

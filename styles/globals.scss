@@ -290,6 +290,7 @@ html {
           color: black;
           line-height: 1;
           vertical-align: middle;
+          position: relative;
 
           display: flex;
           align-items: center;
@@ -301,12 +302,18 @@ html {
           span {
             display: inline-block;
             overflow: hidden;
-            max-width: 0;
-            opacity: 0;
-            padding-left: .5em;
+            opacity: 1;
+            // padding-left: .5em;
             transform: translate3d(-.5em, 0, 0);
             transition: opacity .6s, max-width .6s, transform .6s;
             transition-timing-function: ease-in-out;
+            position: absolute;
+            top: -1rem;
+            right: -1rem;
+            background: #d43839;
+            color: #fff;
+            padding: 1rem;
+            border-radius: 50%;
           }
 
 

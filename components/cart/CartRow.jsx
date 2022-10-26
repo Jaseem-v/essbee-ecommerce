@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { discountPriceCalculator } from '../utility';
-import { decrementCartProduct, incrementCartProduct, removeproductfromCart } from '../../redux/action/reduxAction';
+import { decrementCartProduct, incrementCartProduct, removeProductCartAlert, removeproductfromCart } from '../../redux/action/reduxAction';
 
 export default function CartRow({ cartItem, quantity }) {
     const [counter, setCounter] = useState(1);
@@ -20,6 +20,7 @@ export default function CartRow({ cartItem, quantity }) {
     };
     const handleRemove = () => {
         dispatch(removeproductfromCart(cartItem.id))
+        dispatch(removeProductCartAlert())
     };
 
     const price = Math.round(discountPriceCalculator(cartItem.discount, cartItem.price))

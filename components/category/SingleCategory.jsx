@@ -6,7 +6,7 @@ import Link from 'next/link';
 function SingleCategory({ title, img, page = false, format = "webp" }) {
     return (
         <Card>
-            <Link href="/">
+            <Link href="/shop/groceries">
                 <a >
                     <div className='category__card'>
                         <div className="category__img">

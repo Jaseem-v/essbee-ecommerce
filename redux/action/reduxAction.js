@@ -77,3 +77,13 @@ export const addProductCartAlertClose = () => {
         type: "CART__ADD__ALERT__CLOSE"
     }
 }
+export const removeProductCartAlert = () => {
+    return {
+        type: "CART__REMOVE__ALERT"
+    }
+}
+export const removeProductCartAlertClose = () => {
+    return {
+        type: "CART__REMOVE__ALERT__CLOSE"
+    }
+}

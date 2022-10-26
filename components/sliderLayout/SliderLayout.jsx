@@ -46,7 +46,7 @@ export default function SliderLayout({ title = "title", products, more = true, b
                 <h2 className="sliderLayout__title">{title}</h2>
 
                 {more && <div className="sliderLayout__more">
-                    <Link href="/College/">
+                    <Link href="/shop/groceries">
                         <a className="btn btn--slider">
                             See All <i className='fa fa-chevron-right'></i>
                         </a>
