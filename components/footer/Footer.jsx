@@ -86,7 +86,7 @@ export default function Footer() {
                             <div className="footer-widget">
                                 <div className="footer-logo">
                                     <a href="index.html">
-                                        <img src="/logo_white.png" className="img-fluid" alt="logo" /></a>
+                                        <img src="/new_logo-eb.png" className="img-fluid" alt="logo" /></a>
                                 </div>
                                 <div className="footer-text">
                                     <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
