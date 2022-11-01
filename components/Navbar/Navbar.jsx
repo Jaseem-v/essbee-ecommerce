@@ -13,7 +13,6 @@ import productData from "../../data/products.json"
 //   return product
 // };
 
-console.log(productData.products);
 
 export default function Navbar() {
 

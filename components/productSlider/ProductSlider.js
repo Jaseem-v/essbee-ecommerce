@@ -44,7 +44,6 @@ export default function App({ imageData }) {
 
   const isBreakpoint = useMediaQuery(768)
 
-  console.log(isBreakpoint);
 
   return (
     <div className="product__swiper__slider">

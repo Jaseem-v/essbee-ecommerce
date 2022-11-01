@@ -197,6 +197,13 @@ $colors: (
     letter-spacing: 2%;
   }
 
+  &__success{
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 1rem 0;
+    color: #21ba45;
+  }
+
   &__color-picker {
     &-container {
       margin: 2rem 0;

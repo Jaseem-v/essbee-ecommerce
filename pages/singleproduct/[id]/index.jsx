@@ -10,6 +10,7 @@ import { Snackbar } from "@mui/material";
 import MuiAlert from '@mui/material/Alert';
 import AlrtMsg from "../../../components/alrtmsg/AlrtMsg";
 import productData from "../../../data/products.json"
+import Link from "next/link";
 
 
 const Alert = React.forwardRef(function Alert(props, ref) {
@@ -21,7 +22,9 @@ export default function Details() {
   const [product, setProduct] = useState([]);
   const [counter, setCounter] = useState(1);
   const slider_products = useSelector((state) => state.products)
+  const cartReducer = useSelector((state) => state.cartReducer)
   const wishListReducer = useSelector((state) => state.wishListReducer)
+
 
   const dispatch = useDispatch();
 
@@ -72,6 +75,7 @@ export default function Details() {
     return wishListReducer.wishlist.some(el => el.id == product.id)
   }
 
+  const isInCart = cartReducer.cart.some(el => el.product == product)
 
 
 
@@ -203,12 +207,27 @@ export default function Details() {
                 </div>
               </div>
 
+              {
+                isInCart ? <h6 className="product-page__success">
+                  Product added successfully to cart
+                </h6> : null
+              }
+
 
               <div className="product-page__btn-set">
-                <button className="product-page__btn" onClick={() => addcarthandler(product)}>
-                  Add to Cart
-                </button>
-                {isWishList() ?
+                {isInCart ?
+                  <button className="product-page__btn">
+                    <Link href={"/user/cart"}>
+                      <a >
+                        Go to Cart
+                      </a>
+                    </Link>
+                  </button>
+                  :
+                  <button className="product-page__btn" onClick={() => addcarthandler(product)}>
+                    Add to Cart
+                  </button>}
+                {!isInCart ? (isWishList() ?
                   <button className="product-page__btn--wishlist" onClick={() => removeWishListProduct(product.id)}>
                     <i className="fa fa-heart wish-heart" ></i>
 
@@ -216,12 +235,14 @@ export default function Details() {
                   :
                   <button className="product-page__btn--wishlist" onClick={() => addWishListhandler(product)}>
                     <i className="fa fa-heart-o wish-heart"></i>
-                  </button>
+                  </button>) : null
                 }
               </div>
-              <button className="product-page__btn product-page__btn--buy">
-                Buy It Now !
-              </button>
+              {!isInCart ?
+                <button className="product-page__btn product-page__btn--buy">
+                  Buy It Now !
+                </button> : null
+              }
             </div>
           </div>
 

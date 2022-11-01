@@ -8,7 +8,6 @@ import { discountPriceCalculator } from '../../components/utility'
 export default function Cart() {
     const cart = useSelector((state) => state.cartReducer.cart)
 
-    console.log(cart);
 
     let total = cart.reduce((sum, el) => {
         const price = Math.round(discountPriceCalculator(el.product.discount, el.product.price))
@@ -84,7 +83,16 @@ export default function Cart() {
                                         <h5>Rs {total}</h5>
                                     </div>
 
-                                    <button className="cart__btn cart__btn--checkout">Checkout</button>
+                                    <button className="cart__btn cart__btn--checkout">
+                                        <Link href={"/user/checkout"}>
+                                            <a >
+                                                <span style={{ color: "#fff" }}>
+
+                                                    Checkout
+                                                </span>
+                                            </a>
+                                        </Link>
+                                    </button>
                                 </div>
                             </div>
                         </div>
