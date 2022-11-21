@@ -74,6 +74,11 @@ export default function Details() {
   const isWishList = () => {
     return wishListReducer.wishlist.some(el => el.id == product.id)
   }
+  const buynowHandler = (items) => {
+    addcarthandler(items);
+    router.push("/user/cart")
+
+  }
 
   const isInCart = cartReducer.cart.some(el => el.product == product)
 
@@ -239,7 +244,7 @@ export default function Details() {
                 }
               </div>
               {!isInCart ?
-                <button className="product-page__btn product-page__btn--buy">
+                <button className="product-page__btn product-page__btn--buy" onClick={() => buynowHandler(product)}>
                   Buy It Now !
                 </button> : null
               }

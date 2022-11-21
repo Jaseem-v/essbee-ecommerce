@@ -89,8 +89,14 @@ export default function Footer() {
                                         <img src="/new_logo-eb.png" className="img-fluid" alt="logo" /></a>
                                 </div>
                                 <div className="footer-text">
-                                    <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                                        elit,Lorem ipsum dolor sit amet.</p>
+                                    <p>
+
+                                        Lorem ipsum dolor sit amet, consec tetur
+                                        adipisicing elit, sed do eiusmod tempor 
+                                        incididuntut consec tetur adipisicing
+                                        elit,Lorem ipsum dolor sit amet.
+
+                                    </p>
                                 </div>
                                 {/* <div className="footer-social-icon">
                                     <span>Follow us</span>

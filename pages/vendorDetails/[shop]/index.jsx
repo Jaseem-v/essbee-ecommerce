@@ -1,11 +1,28 @@
-import { Stack } from '@mui/material'
+import { Slider, Stack } from '@mui/material'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
+import FilterBox from '../../../components/fliterBox/FilterBox'
 import Product from '../../../components/product/Product'
 import SliderLayout from '../../../components/sliderLayout/SliderLayout'
 import { randomProducts } from '../../../components/utility'
 
+const brands = [
+    "apple", "asus", "acer", "samsung", "hp", "dell"
+]
+const ram = [
+    "2GB", "4GB", "8GB", "16GB", "32Gb", "64GB", "128GB",
+]
+const resolution = [
+    "1024 x 600", "1024 x 768", "1280 x 720", "1280 x 800", "1366 x 768",
+]
+const color = [
+    "red", "green", "blue", "violet", "orange", "indigop", "grey"
+]
+
+const filterApllied = [
+    "mobile", "samsung", "ram", "watch"
+]
 
 const bp = {
     640: {
@@ -25,9 +42,25 @@ const bp = {
         spaceBetween: 10,
     },
 }
+
+function valuetext(value) {
+    return `${value}°C`;
+}
 export default function VendorDetails() {
 
     const products = useSelector((state) => state.products)
+    const [value, setValue] = useState([2000, 5700]);
+    const [isFilterOpen, setisFilterOpen] = useState(false);
+
+    const handleChange = (event, newValue) => {
+        setValue(newValue);
+    };
+    const filterOpenHandler = () => {
+        setisFilterOpen(true)
+    }
+    const filterCloseHandler = () => {
+        setisFilterOpen(false)
+    }
 
     return (
         <div className="vendor-details">
@@ -76,6 +109,33 @@ export default function VendorDetails() {
                                 </div>
                             </div>
 
+                            <div className={isFilterOpen ? "shop__filter-div mt-3 active" : "shop__filter-div mt-3"}>
+                                <div className="shop__filter-head d-md-none">
+                                    <h4>product filter</h4>
+
+                                    <i onClick={filterCloseHandler} className="fa fa-times"></i>
+
+                                </div>
+                                <div className="shop__filter-content">
+                                    <FilterBox data={brands} title={"brand"} />
+                                    <FilterBox data={ram} title={"ram"} />
+                                    <FilterBox data={resolution} title={"resolution"} />
+                                    <FilterBox data={color} title={"colour"} />
+                                    <FilterBox title={"Price"} >
+                                        <Slider
+                                            getAriaLabel={() => 'Temperature range'}
+                                            value={value}
+                                            onChange={handleChange}
+                                            valueLabelDisplay="auto"
+                                            getAriaValueText={valuetext}
+                                            // color="s"
+                                            max={10000}
+                                            min={100}
+                                        />
+                                    </FilterBox>
+                                </div>
+                            </div>
+
                         </aside>
 
                     </div>
@@ -90,6 +150,7 @@ export default function VendorDetails() {
                         <Stack direction="row" alignItems="center" justifyContent="space-between" className='vendor-details__heading mt-5'>
 
                             <h2 className="sliderLayout__title">36 Products found</h2>
+                            <h2 className="sliderLayout__title d-md-none" onClick={filterOpenHandler}><i className='fa fa-sliders'></i> Filter</h2>
 
                             <select name="sort" id="sort" className="vendor-details__sort-select">
                                 <option value="latest">Sort by latest</option>
@@ -101,7 +162,7 @@ export default function VendorDetails() {
                         </Stack>
 
                         <div className="row mt-5">
-                            {products && randomProducts(products, 12).map((el,i) => {
+                            {products && randomProducts(products, 12).map((el, i) => {
 
                                 return <div className="col-md-3 col-6" key={i}>
                                     <Product el={el} />

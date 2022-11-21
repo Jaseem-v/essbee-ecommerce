@@ -53,11 +53,9 @@ function Category() {
                         slidesPerView: 10,
                         spaceBetween: 10,
                     },
+                    
                 }}
-
-
-
-
+                autoplay
             >
                 {
                     data.map((el, i) => {
@@ -65,6 +63,7 @@ function Category() {
                         return (
                             <SwiperSlide key={i}>
                                 <SingleCategory title={el.text} img={el.id} />
+                                {/* <SingleCategory title={el.text} img={el.id} /> */}
                             </SwiperSlide>
                         )
 
