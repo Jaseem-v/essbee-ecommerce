@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
+
 import { Pagination, Navigation, Autoplay } from "swiper";
 
 
@@ -16,12 +17,7 @@ export default function Banner() {
     const navigationNextRef = React.useRef(null)
     const navigationPagination = React.useRef(null)
 
-    const pagination = {
-        clickable: true,
-        // renderBullet: function (index, className) {
-        //     return '<span className="' + className + '">' + (index + 1) + "</span>"
-        // },
-    };
+  
     return (
         // < !--header ---- -->
         <header>
@@ -45,7 +41,7 @@ export default function Banner() {
                 }}
             >
 
-                {[1, 2, 3, 4, 5,6].map((el, i) => (
+                {[1, 2, 3, 4, 5, 6].map((el, i) => (
                     <SwiperSlide key={i}>
                         <img src={`/banner/banner_${el}.png`} />
 

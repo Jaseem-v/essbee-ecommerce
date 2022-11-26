@@ -3,13 +3,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import SingleCategory from './SingleCategory';
 import axios from 'axios';
+import { Autoplay , Scrollbar } from "swiper";
 
-// const category_data = [
-//     {
-
-//     }
-// ]
-
+import 'swiper/css/scrollbar';
 
 
 
@@ -32,8 +28,9 @@ function Category() {
 
 
     return (
-        <div>
+        <div className='category__box'>
             <Swiper
+                modules={[Scrollbar, Autoplay]}
                 spaceBetween={10}
                 slidesPerView={3}
                 breakpoints={{
@@ -53,9 +50,14 @@ function Category() {
                         slidesPerView: 10,
                         spaceBetween: 10,
                     },
-                    
+
                 }}
-                autoplay
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
+                scrollbar={{ draggable: false }}
+
             >
                 {
                     data.map((el, i) => {
@@ -73,7 +75,10 @@ function Category() {
                 }
 
 
-            </Swiper></div>
+
+            </Swiper>
+
+        </div>
     )
 }
 

@@ -91,7 +91,58 @@
             }
         }
     }
+
+    &__progress {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0;
+
+        &-bar {
+            width: 30%;
+            content: "";
+            height: 1rem;
+            background: #E5E4C7;
+            position: relative;
+        }
+
+        &-drag {
+            position: absolute;
+            width: 20%;
+            height: 100%;
+            content: "";
+            background: #404553;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__box {
+        padding: 2rem 0;
+
+        .swiper {
+            padding-bottom: 3rem !important;
+
+            .swiper-scrollbar {
+                display: block !important;
+                width: 20%;
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+                background-color: rgba(#E5E4C7,0.5);
+            }
+
+            .swiper-scrollbar .swiper-scrollbar-drag {
+                background-color: #404553;
+            }
+        }
+
+
+    }
 }
+
 
 //////////////////////////////////
 /// checkout

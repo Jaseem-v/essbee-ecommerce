@@ -152,7 +152,7 @@ export default function ShopCategory() {
                     </Stack>
 
                     <div className="row mt-5">
-                        {products && randomProducts(products, 12).map((el,i) => {
+                        {products && randomProducts(products, 12).map((el, i) => {
 
                             return <div className="col-md-3 col-6" key={i}>
                                 <Product el={el} />
@@ -163,7 +163,7 @@ export default function ShopCategory() {
                     </div>
                     {/* <!-- -----pagination------- --> */}
                     <div className="col-md-12 col-sm-12 col-lg-12 mb-5">
-                        <div className="pagination text-center">
+                        {/* <div className="pagination text-center">
                             <a href="#" className="prev pagination__numbers">
                                 <i className="bi bi-chevron-double-left"></i>
                             </a>
@@ -181,6 +181,11 @@ export default function ShopCategory() {
                                 <i className="bi bi-chevron-double-right"></i>
                             </a>
 
+                        </div> */}
+                        <div className="d-flex align-items-center justify-content-center py-5">
+                            <button className="btn btn--slider">
+                                Load more
+                            </button>
                         </div>
                     </div>
                     {/* <!-- --xx---pagination--xx----- --> */}
