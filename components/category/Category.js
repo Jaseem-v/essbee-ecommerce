@@ -3,9 +3,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import SingleCategory from './SingleCategory';
 import axios from 'axios';
-import { Autoplay , Scrollbar } from "swiper";
+import { Autoplay, Scrollbar, Grid } from "swiper";
 
 import 'swiper/css/scrollbar';
+import "swiper/css/grid";
 
 
 
@@ -30,17 +31,29 @@ function Category() {
     return (
         <div className='category__box'>
             <Swiper
-                modules={[Scrollbar, Autoplay]}
+                modules={[Scrollbar, Autoplay, Grid]}
                 spaceBetween={10}
                 slidesPerView={3}
+                grid={
+                    {
+                        rows: 2,
+                        fill: "row",
+                    }
+                }
+
                 breakpoints={{
                     640: {
                         slidesPerView: 5,
                         spaceBetween: 10,
+
                     },
                     768: {
                         slidesPerView: 7,
                         spaceBetween: 10,
+                        grid: {
+                            rows: 1,
+                            fill: "row",
+                        }
                     },
                     1024: {
                         slidesPerView: 10,
@@ -78,7 +91,7 @@ function Category() {
 
             </Swiper>
 
-        </div>
+        </div >
     )
 }
 
